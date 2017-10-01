@@ -39,14 +39,14 @@ object LoopFor
 
                 println( "The map in a loop... revisited" )
                 var i: Int = 0
-                           for( v <- mapa.get( "A" ) )
+                
+                for( v <- mapa.get( "A" ) )
                 {
                         i += 1
                         printf( "%sThe value # %d is %s\n", tab, i, v )
                 }
 
                 printf( "Left loop with %d value(s)\n", i )
-
                 println( "The map get to a string" )
                 var item: String = ""
                 mapa.get("A").foreach( v => item = v )
